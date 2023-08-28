@@ -22,6 +22,7 @@ model Tweet {
 
     // creating index for userId
     @@index([userId])
+    @@unique([createdAt, id])
 }
 
 model Like {
